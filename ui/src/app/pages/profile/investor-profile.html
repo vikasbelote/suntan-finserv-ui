@@ -27,45 +27,48 @@
 				<form #f="ngForm" (ngSubmit)="formSubmit(f)">
 					<div class="form-group row m-b-15">
 						<label class="col-form-label col-md-2">Name</label>
+						<input name="personId" [(ngModel)]="profile.personId" type="hidden" />
+						<input name="bankId" [(ngModel)]="profile.bankId" type="hidden" />
+						<input name="addressId" [(ngModel)]="profile.addressId" type="hidden" />
 						<div class="col-md-3">
-							<input name="firstName" ngModel type="text" class="form-control m-b-5" placeholder="Enter first name" />
+							<input name="firstName" [(ngModel)]="profile.firstName" type="text" class="form-control m-b-5" placeholder="Enter first name" />
 						</div>
 						<div class="col-md-3">
-							<input name="middleName" ngModel type="text" class="form-control m-b-5" placeholder="Enter middle name" />
+							<input name="middleName" [(ngModel)]="profile.middleName" type="text" class="form-control m-b-5" placeholder="Enter middle name" />
 						</div>
 						<div class="col-md-3">
-							<input name="lastName" ngModel type="text" class="form-control m-b-5" placeholder="Enter last name" />
+							<input name="lastName" [(ngModel)]="profile.lastName" type="text" class="form-control m-b-5" placeholder="Enter last name" />
 						</div>
 					</div>
 					<div class="form-group row m-b-15">
 						<label class="col-form-label col-md-2">Email address</label>
 						<div class="col-md-3">
-							<input name="emailAddress" ngModel type="email" class="form-control m-b-5" placeholder="Enter email" />
+							<input name="emailAddress" [(ngModel)]="profile.emailAddress" type="email" class="form-control m-b-5" placeholder="Enter email" />
 						</div>
 						<label class="col-form-label col-md-2">Mobile Number</label>
 						<div class="col-md-3">
-							<input name="mobileNumber" ngModel type="text" class="form-control m-b-5" placeholder="Enter mobile number" />
+							<input name="mobileNumber" [(ngModel)]="profile.mobileNumber" type="text" class="form-control m-b-5" placeholder="Enter mobile number" />
 						</div>
 					</div>
 					<div class="form-group row m-b-15">
 						<label class="col-form-label col-md-2">Pan Card</label>
 						<div class="col-md-3">
-							<input name="panCard" ngModel type="text" class="form-control m-b-5" placeholder="Enter pan number" />
+							<input name="panCard" [(ngModel)]="profile.panCard" type="text" class="form-control m-b-5" placeholder="Enter pan number" />
 						</div>
 						<label class="col-form-label col-md-2">Adhar Number</label>
 						<div class="col-md-3">
-							<input name="adharNumber" ngModel type="text" class="form-control m-b-5" placeholder="Enter Adhar number" />
+							<input name="adharNumber" [(ngModel)]="profile.adharNumber" type="text" class="form-control m-b-5" placeholder="Enter Adhar number" />
 						</div>
 					</div>
 					<hr/>
 					<div class="form-group row m-b-15">
 						<label class="col-form-label col-md-2">Account Number</label>
 						<div class="col-md-3">
-							<input name="accountNumber" ngModel type="text" class="form-control m-b-5" placeholder="Enter account number" />
+							<input name="accountNumber" [(ngModel)]="profile.accountNumber" type="text" class="form-control m-b-5" placeholder="Enter account number" />
 						</div>
 						<label class="col-form-label col-md-2">Account Type</label>
 						<div class="col-md-3">
-							<select name="accountType" ngModel class="form-control">
+							<select name="accountType" [(ngModel)]="profile.accountType" class="form-control">
 								<option>Saving</option>
 								<option>Current</option>
 							</select>
@@ -74,32 +77,32 @@
 					<div class="form-group row m-b-15">
 						<label class="col-form-label col-md-2">IFSC Code</label>
 						<div class="col-md-3">
-							<input name="ifscCode" ngModel type="text" class="form-control m-b-5" placeholder="Enter IFCS Code" />
+							<input name="ifscCode" [(ngModel)]="profile.ifscCode" type="text" class="form-control m-b-5" placeholder="Enter IFCS Code" />
 						</div>
 						<label class="col-form-label col-md-2">Branch</label>
 						<div class="col-md-3">
-							<input name="branch" ngModel type="text" class="form-control m-b-5" placeholder="Enter branch" />
+							<input name="branch" [(ngModel)]="profile.branch" type="text" class="form-control m-b-5" placeholder="Enter branch" />
 						</div>
 					</div>
 					<hr/>
 					<div class="form-group row m-b-15">
 						<label class="col-form-label col-md-2">Address Text</label>
 						<div class="col-md-3">
-							<textarea name="addressText" ngModel cols="35" rows="2"></textarea>
+							<textarea name="addressText" [(ngModel)]="profile.addressText" cols="35" rows="2"></textarea>
 						</div>
 						<label class="col-form-label col-md-2">City</label>
 						<div class="col-md-3">
-							<input name="city" ngModel type="text" class="form-control m-b-5" placeholder="Enter city" />
+							<input name="city" [(ngModel)]="profile.city" type="text" class="form-control m-b-5" placeholder="Enter city" />
 						</div>
 					</div>
 					<div class="form-group row m-b-15">
 						<label class="col-form-label col-md-2">State</label>
 						<div class="col-md-3">
-							<input name="state" ngModel type="text" class="form-control m-b-5" placeholder="Enter state" />
+							<input name="state" [(ngModel)]="profile.state" type="text" class="form-control m-b-5" placeholder="Enter state" />
 						</div>
 						<label class="col-form-label col-md-2">Pincode</label>
 						<div class="col-md-3">
-							<input name="pincode" ngModel type="text" class="form-control m-b-5" placeholder="Enter pincode" />
+							<input name="pincode" [(ngModel)]="profile.pincode" type="text" class="form-control m-b-5" placeholder="Enter pincode" />
 						</div>
 					</div>
 					<div class="form-group row">

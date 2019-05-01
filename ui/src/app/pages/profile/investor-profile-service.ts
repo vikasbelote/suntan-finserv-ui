@@ -13,4 +13,8 @@ export class InvestorProfileService {
         .map(res => <Profile>res.json());
     }
 
+    getInvestorProfile(userId: number) : Observable<Profile> {
+        return this.http.get("http://localhost:8080/investor/"+ userId +"/profile")
+        .map(res => <Profile>res.json());
+    }
 }

@@ -1,5 +1,5 @@
 export class UserDetail {
-    userId:Number;
+    userId:number;
     userName:string;
     password:string;
     firstName:string;

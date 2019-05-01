@@ -36,6 +36,7 @@ export class LoginV3Page {
         this.router.navigate(['dashboard/v1']);
 
         let userInfo = new UserInfo();
+        userInfo.userId = res.userId;
         userInfo.firstName = res.firstName;
         userInfo.lastName = res.lastName;
         userInfo.userName = res.userName
